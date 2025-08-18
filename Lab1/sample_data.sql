@@ -24,8 +24,8 @@ CurrentPhone, PermanentStreet, PermanentCity, PermanentState, PermanentZipCode, 
 
 -- Insert Courses
 INSERT INTO Course (CourseNumber, CourseName, Description, SemesterHours, Level, DeptCode) VALUES
-('CS101', 'Intro to Programming', 'Basics of programming in Python', 3, 'Postgraduate', 'CS'),
-('CSF201', 'Network Security', 'Principles of cybersecurity and networking', 5, 'Postgraduate', 'CSF'),
+('CS101', 'Intro to Programming', 'Basics of programming in Python', 3, 'Graduate', 'CS'),
+('CSF201', 'Network Security', 'Principles of cybersecurity and networking', 5, 'Graduate', 'CSF'),
 ('MATH301', 'Linear Algebra', 'Matrix theory and linear algebra', 4, 'Undergraduate', 'MATH');
 
 -- Insert Sections
