@@ -22,9 +22,7 @@ It is designed as a **complete resource hub** for learning, practicing, and revi
 - 📝 **Notes** – Summaries of concepts and explanations  
 
 ### 📂 Projects  
-- University Database (Schema + ER Diagram + Queries)  
-- Mini-projects for coursework  
-- Real-world case studies  
+- updating soon ..........
 
 ---
 
