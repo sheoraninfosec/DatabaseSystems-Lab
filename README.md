@@ -1,4 +1,4 @@
-# 📚 Database Systems Lab  
+# 📚 Database Systems 
 
 Welcome to my **Database Systems Lab Repository**.  
 This repo contains all my **coursework, practical projects, lab experiments, reference books, and cheatsheets** related to **MySQL and Database Systems**.  
