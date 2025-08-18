@@ -41,7 +41,7 @@ CREATE TABLE Student (
   BirthDate DATE,
   Sex CHAR(1),
   Class ENUM('Freshman','Sophomore','Junior','Senior','Graduate'),
-  DegreeProgram ENUM('BA','BS','MS','PhD'),
+  DegreeProgram ENUM('BTECH','MTECH') NOT NULL,
   MajorDeptCode VARCHAR(10) NOT NULL,
   MinorDeptCode VARCHAR(10),
   FOREIGN KEY (MajorDeptCode) REFERENCES Department(DeptCode),
@@ -63,7 +63,7 @@ CREATE TABLE Course (
 CREATE TABLE Section (
   SectionID INT AUTO_INCREMENT PRIMARY KEY,
   CourseNumber VARCHAR(10) NOT NULL,
-  Semester ENUM('Spring','Summer','Fall','Winter') NOT NULL,
+  Semester ENUM('Summer','Winter') NOT NULL,
   Year YEAR NOT NULL,
   SectionNumber INT NOT NULL,
   InstructorID INT NOT NULL,
