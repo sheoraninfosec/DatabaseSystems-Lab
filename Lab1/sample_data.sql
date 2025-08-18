@@ -16,11 +16,11 @@ INSERT INTO Instructor (FirstName, LastName, DeptCode, Email, Phone) VALUES
 INSERT INTO Student (StudentNumber, SSN, FirstName, LastName, CurrentStreet, CurrentCity, CurrentState, CurrentZipCode,
 CurrentPhone, PermanentStreet, PermanentCity, PermanentState, PermanentZipCode, PermanentPhone, BirthDate, Sex, Class, DegreeProgram, MajorDeptCode, MinorDeptCode) VALUES
 (1001, '123456789', 'Jigesh', 'Sheoran', 'Plot 180 P&B Society', 'Dehradun', 'UK', '248007', '111-111-0000',
-'Plot 180, P&B Society', 'Dehradun', 'UK', '248007', '111-111-0000', '2000-01-01', 'M', 'Freshman', 'MS', 'CSF', 'MATH'),
+'Plot 180, P&B Society', 'Dehradun', 'UK', '248007', '111-111-0000', '2000-01-01', 'M', 'Freshman', 'MTECH', 'CSF', 'MATH'),
 (1002, '987654321', 'Raghav', 'Rajput', 'Plot 180, P&B Society', 'Dehradun', 'UK', '248007', '222-222-0000',
-'Plot 180, P&B Society', 'Dehradun', 'UK', '248007', '222-222-0000', '2001-01-01', 'M', 'Freshman', 'BS', 'CS', NULL),
+'Plot 180, P&B Society', 'Dehradun', 'UK', '248007', '222-222-0000', '2001-01-01', 'M', 'Freshman', 'MTECH', 'CS', NULL),
 (1003, '555667777', 'William', 'Shakespeare', 'Plot 181 P&B Society', 'Dehradun', 'UK', '248007', '333-333-0000',
-'11 Rajpur Road', 'Dehradun', 'UK', '248001', '333-333-0001', '2002-01-01', 'M', 'Senior', 'BA', 'MATH', 'CSF');
+'11 Rajpur Road', 'Dehradun', 'UK', '248001', '333-333-0001', '2002-01-01', 'M', 'Senior', 'BTECH', 'MATH', 'CSF');
 
 -- Insert Courses
 INSERT INTO Course (CourseNumber, CourseName, Description, SemesterHours, Level, DeptCode) VALUES
