@@ -1,4 +1,6 @@
 -- Company Database Schema (Lab 2)
+-- Author: Jigesh Sheoran 
+-- Date:   19 August 2025
 
 DROP DATABASE IF EXISTS CompanyDB;
 CREATE DATABASE CompanyDB;
