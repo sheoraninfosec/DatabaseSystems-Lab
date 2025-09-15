@@ -39,8 +39,7 @@ CREATE TABLE SALESMAN_MASTER (
   REMARKS VARCHAR(60)
 );
 
-INSERT INTO CLIENT_MASTER 
-VALUES 
+INSERT INTO CLIENT_MASTER VALUES 
 ('C00001', 'Ivan Bayross', 'A/14', 'Worli', 'Mumbai', 400054, 'Maharashtra', 15000),
 ('C00002', 'Mamta Muzumdar', '65', 'Nariman', 'Madras', 780001, 'Tamil Nadu', 0),
 ('C00003', 'Chhaya Bankar', 'P-7', 'Bandra', 'Mumbai', 400057, 'Maharashtra', 5000),
@@ -48,8 +47,7 @@ VALUES
 ('C00005', 'Hansel Colaco', 'B/2', 'MG Road', 'Bangalore', 560001, 'Karnataka', 0),
 ('C00006', 'Deepak Sharma', 'D-45', 'Koramangala', 'Bangalore', 560001, 'Karnataka', 0);
 
-INSERT INTO PRODUCT_MASTER 
-VALUES 
+INSERT INTO PRODUCT_MASTER VALUES 
 ('P00001', 'T-Shirt', 5, 'Piece', 200, 50, 350.00, 250.00),
 ('P0345', 'Shirts', 6, 'Piece', 150, 50, 500.00, 350.00),
 ('P06734', 'Cotton', 5, 'Piece', 100, 20, 600.00, 450.00),
@@ -60,8 +58,7 @@ VALUES
 ('P07975', 'Lycra Tops', 5, 'Piece', 70, 30, 300.00, 175.00),
 ('P08865', 'Skirts', 5, 'Piece', 75, 30, 450.00, 300.00);
 
-INSERT INTO SALESMAN_MASTER 
-VALUES 
+INSERT INTO SALESMAN_MASTER VALUES 
 ('S00001', 'Aman', 'A/14', 'Worli', 'Mumbai', 400002, 'Maharashtra', 3000, 100, 50, 'Good'),
 ('S00002', 'Omkar', '65', 'Nariman', 'Mumbai', 400001, 'Maharashtra', 3000, 200, 100, 'Good'),
 ('S00003', 'Raj','qwerty', 'Bandra', 'Mumbai', 400032, 'Maharashtra', 3000, 200, 100, 'Good'),
