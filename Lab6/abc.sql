@@ -5,3 +5,4 @@ JOIN PROJECT P ON W.PNO = P.PNUMBER
 WHERE E.DNO = 5 
   AND W.HOURS > 10 
   AND P.PNAME = 'ProductX';
+ff
