@@ -1,0 +1,50 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Analytics — {{ course.course_name }}</h2>
+
+<h3>Attendance Summary</h3>
+<table>
+    <tr>
+        <th>Student</th>
+        <th>Present Days</th>
+        <th>Total Days</th>
+        <th>Percentage</th>
+    </tr>
+    {% for a in attendance %}
+    <tr>
+        <td>{{ a.name }}</td>
+        <td>{{ a.present_days }}</td>
+        <td>{{ a.total_days }}</td>
+        <td>
+            {% if a.total_days > 0 %}
+                {{ (a.present_days / a.total_days * 100) | round(2) }}%
+            {% else %}
+                N/A
+            {% endif %}
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+
+<h3>Grades Summary</h3>
+<table>
+    <tr>
+        <th>Student</th>
+        <th>Exam Type</th>
+        <th>Marks</th>
+        <th>Max Marks</th>
+    </tr>
+    {% for g in grades %}
+    <tr>
+        <td>{{ g.name }}</td>
+        <td>{{ g.exam_type }}</td>
+        <td>{{ g.marks_obtained }}</td>
+        <td>{{ g.max_marks }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

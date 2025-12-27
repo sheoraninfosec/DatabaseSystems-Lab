@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Mark Attendance — {{ course.course_name }}</h2>
+
+<form method="POST">
+    <label>Date:</label>
+    <input type="date" name="date" required><br><br>
+
+    <table>
+        <tr>
+            <th>Student</th>
+            <th>Status</th>
+        </tr>
+
+        {% for s in students %}
+        <tr>
+            <td>{{ s.name }}</td>
+            <td>
+                <select name="status_{{ s.reg_id }}">
+                    <option value="Present">Present</option>
+                    <option value="Absent">Absent</option>
+                </select>
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <button type="submit">Save Attendance</button>
+</form>
+
+{% endblock %}

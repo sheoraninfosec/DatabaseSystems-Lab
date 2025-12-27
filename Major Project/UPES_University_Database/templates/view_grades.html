@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Grades</h2>
+
+<table>
+    <tr>
+        <th>Course</th>
+        <th>Exam</th>
+        <th>Marks</th>
+        <th>Max Marks</th>
+    </tr>
+
+    {% for g in grades %}
+    <tr>
+        <td>{{ g.course_name }}</td>
+        <td>{{ g.exam_type }}</td>
+        <td>{{ g.marks_obtained }}</td>
+        <td>{{ g.max_marks }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

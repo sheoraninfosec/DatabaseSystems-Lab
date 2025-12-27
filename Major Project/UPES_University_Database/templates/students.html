@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>All Students</h2>
+
+<form method="GET">
+    <input type="text" name="search" placeholder="Search by name..." value="{{ search }}">
+    <button type="submit">Search</button>
+</form>
+
+<br>
+
+<table>
+    <tr>
+        <th>ID</th>
+        <th>Name</th>
+        <th>Program</th>
+        <th>Specialization</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for s in students %}
+    <tr>
+        <td>{{ s.student_id }}</td>
+        <td>{{ s.name }}</td>
+        <td>{{ s.program_name }}</td>
+        <td>{{ s.specialization_name or "None" }}</td>
+        <td>
+            <a href="/view_student?id={{ s.student_id }}">View</a> |
+            <a href="/edit_student?id={{ s.student_id }}">Edit</a> |
+            <a href="/delete_student?id={{ s.student_id }}" onclick="return confirm('Delete student?')">Delete</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

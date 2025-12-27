@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Welcome, {{ student.name }}</h2>
+
+<p><b>Program:</b> {{ student.program_name }}</p>
+<p><b>Specialization:</b> {{ student.specialization_name or "None" }}</p>
+
+<div class="card-grid">
+    <a class="card" href="/attendance?id={{ student_id }}">View Attendance</a>
+    <a class="card" href="/grades?id={{ student_id }}">View Grades</a>
+</div>
+
+{% endblock %}

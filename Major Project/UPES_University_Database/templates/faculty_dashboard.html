@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Faculty Dashboard</h2>
+<p><b>Your Courses</b></p>
+
+<table>
+    <tr>
+        <th>Course Code</th>
+        <th>Course Name</th>
+        <th>Actions</th>
+    </tr>
+
+    {% for c in courses %}
+    <tr>
+        <td>{{ c.course_code }}</td>
+        <td>{{ c.course_name }}</td>
+        <td>
+            <a href="/faculty/course/{{ c.course_id }}">View Students</a> |
+            <a href="/faculty/attendance/{{ c.course_id }}">Mark Attendance</a> |
+            <a href="/faculty/grades/{{ c.course_id }}">Enter Grades</a> |
+            <a href="/faculty/analytics/{{ c.course_id }}">Analytics</a>
+        </td>
+    </tr>
+    {% endfor %}
+</table>
+
+{% endblock %}

@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Admin Dashboard</h2>
+
+<div class="card-grid">
+    <a href="/add_student" class="card">Add Student</a>
+    <a href="/students" class="card">View All Students</a>
+    <a href="/analytics" class="card">Analytics Dashboard</a>
+    <a href="/sql_console" class="card">SQL Console</a>
+    <a href="/export_students" class="card">Export Students CSV</a>
+</div>
+{% endblock %}

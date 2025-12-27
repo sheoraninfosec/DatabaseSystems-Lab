@@ -1,0 +1,32 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>{{ course.course_name }}</h2>
+<p><b>Students Enrolled:</b></p>
+
+<table>
+    <tr>
+        <th>Student ID</th>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Admission Year</th>
+    </tr>
+
+    {% for s in students %}
+    <tr>
+        <td>{{ s.student_id }}</td>
+        <td>{{ s.name }}</td>
+        <td>{{ s.email }}</td>
+        <td>{{ s.admission_year }}</td>
+    </tr>
+    {% endfor %}
+</table>
+
+<br>
+
+<a href="/faculty/attendance/{{ course_id }}">Mark Attendance</a> |
+<a href="/faculty/grades/{{ course_id }}">Enter Grades</a> |
+<a href="/faculty/analytics/{{ course_id }}">View Analytics</a> |
+<a href="/faculty/export/{{ course_id }}">Export CSV</a>
+
+{% endblock %}

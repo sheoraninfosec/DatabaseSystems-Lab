@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>UPES ERP System</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="navbar">
+    <div class="nav-left">UPES University ERP</div>
+
+    <div class="nav-right">
+        {% if session.username %}
+            <span>{{ session.username }} ({{ session.role }})</span>
+            <a href="/logout">Logout</a>
+        {% endif %}
+    </div>
+</div>
+
+<div class="container">
+    {% block content %}{% endblock %}
+</div>
+
+</body>
+</html>

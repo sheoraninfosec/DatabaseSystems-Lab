@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+{% block content %}
+
+<h2>Enter Grades — {{ course.course_name }}</h2>
+
+<form method="POST">
+
+    <label>Exam Type:</label>
+    <select name="exam_type" required>
+        <option value="Midterm">Midterm</option>
+        <option value="Endsem">Endsem</option>
+        <option value="Quiz">Quiz</option>
+        <option value="Assignment">Assignment</option>
+    </select>
+
+    <br><br>
+
+    <label>Max Marks:</label>
+    <input type="number" name="max_marks" required>
+
+    <br><br>
+
+    <table>
+        <tr>
+            <th>Student</th>
+            <th>Marks Obtained</th>
+        </tr>
+
+        {% for s in students %}
+        <tr>
+            <td>{{ s.name }}</td>
+            <td>
+                <input type="number" name="marks_{{ s.reg_id }}" min="0">
+            </td>
+        </tr>
+        {% endfor %}
+    </table>
+
+    <br>
+    <button type="submit">Save Grades</button>
+
+</form>
+
+{% endblock %}

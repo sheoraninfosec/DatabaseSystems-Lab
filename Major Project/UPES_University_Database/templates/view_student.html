@@ -1,0 +1,16 @@
+{% extends "layout.html" %}
+
+{% block content %}
+<h2>Student Profile</h2>
+
+<div class="data-box">
+    <p><b>Name:</b> {{ student.name }}</p>
+    <p><b>Email:</b> {{ student.email }}</p>
+    <p><b>Phone:</b> {{ student.phone }}</p>
+    <p><b>Address:</b> {{ student.address }}</p>
+
+    <p><b>Program:</b> {{ student.program_name }}</p>
+    <p><b>Specialization:</b> {{ student.specialization_name or "None" }}</p>
+</div>
+
+{% endblock %}
