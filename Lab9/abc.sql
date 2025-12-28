@@ -1,2 +1,2 @@
 select
-drop database if already exists
+drop database if already exists ;
