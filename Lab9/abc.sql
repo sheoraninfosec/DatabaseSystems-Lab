@@ -1,2 +1,2 @@
 select
-drop database 
+drop database if
