@@ -3,4 +3,4 @@ drop database if already exists ;
 create lab9DB 
 
 list 
-select 
+select  * from 
