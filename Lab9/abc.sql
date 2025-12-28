@@ -1,3 +1,3 @@
 select lab9DB
 drop database if already exists ;
-create
+create lab9DB 
